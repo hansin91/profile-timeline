@@ -3,6 +3,36 @@ export interface Action {
   icon: string
 }
 
+export interface Badge {
+  name: string
+  alt: string
+  img: string
+}
+
+export interface Video {
+  link: string
+  img: string
+  title: string,
+  text: string
+  meta: string
+}
+
+export interface Tag {
+  name: string
+  tag: string
+  link: string
+}
+
+export interface Post {
+  id: number
+  user: Object
+  createdDate: string
+  pinned: boolean
+  text: string
+  video: Video
+  tags: Array<Tag>
+}
+
 export interface NavigationMenu {
   title: string
   path: string
