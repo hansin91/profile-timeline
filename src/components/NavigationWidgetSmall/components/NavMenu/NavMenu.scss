@@ -1,0 +1,22 @@
+.text-tooltip-tfr {
+  position: relative !important;
+}
+
+.xm-tooltip {
+  white-space: nowrap;
+  position: absolute;
+  z-index: 99999;
+  right: -77px;
+  top: 50%;
+  margin-top: -12px;
+  transform: translate(10px, 0px);
+  transition: all 0.3s ease-in-out 0s;
+  visibility: hidden;
+  opacity: 0;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}

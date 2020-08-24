@@ -6,10 +6,14 @@
 @import 'variables/color';
 @import 'variables/color-theme';
 @import 'form';
-@import 'general';
 @import 'icon';
+@import 'general';
+@import 'utils';
 
 @import 'progress-stat/main';
+@import 'user-avatar/main';
+@import 'navigation-widget/main';
 
 @import 'layout/header';
 @import 'layout/navigation';
+@import 'layout/sidebar';

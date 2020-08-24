@@ -3,6 +3,7 @@ import Navigation from './components/Navigation'
 import {menus} from '../../data/menus'
 import SearchBar from './components/SearchBar'
 import ProgressStat from './components/ProgressStat'
+import Actions from './components/Actions'
 
 function Header() {
   return (
@@ -34,6 +35,7 @@ function Header() {
       </div>
       <SearchBar />
       <ProgressStat percent={70} exp={38}/>
+      <Actions />
     </header>
   )
 }
