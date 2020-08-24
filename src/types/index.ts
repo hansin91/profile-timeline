@@ -27,4 +27,6 @@ export interface User {
   badge: number
   stats: ProfileStat
   socialLinks: Object
+  about: string
+  profile: Object
 }

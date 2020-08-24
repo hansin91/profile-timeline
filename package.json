@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.5",
     "@types/requirejs": "^2.1.32",
+    "@types/tiny-slider-react": "^0.3.2",
     "bootstrap": "^4.5.2",
     "node-sass": "^4.14.1",
     "rc-progress": "^3.0.0",
@@ -21,6 +22,7 @@
     "react-scripts": "3.4.3",
     "react-svg-hexagon": "^1.0.0",
     "styled-components": "^5.1.1",
+    "tiny-slider-react": "^0.5.3",
     "typescript": "~3.7.2"
   },
   "scripts": {
