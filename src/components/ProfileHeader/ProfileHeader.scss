@@ -1,0 +1,8 @@
+.profile-header-cover {
+  &.liquid {
+    background: url('../../assets/img/cover/01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

@@ -7,12 +7,15 @@
 @import 'variables/color-theme';
 @import 'form';
 @import 'icon';
+@import 'grid';
 @import 'general';
+@import 'button';
 @import 'utils';
 
 @import 'progress-stat/main';
 @import 'user-avatar/main';
 @import 'navigation-widget/main';
+@import 'profile-header/main';
 
 @import 'layout/header';
 @import 'layout/navigation';

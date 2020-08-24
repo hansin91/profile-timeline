@@ -5,8 +5,13 @@ import Hexagon from 'react-svg-hexagon'
 import image from '../../assets/img/avatar/01.jpg'
 import NavMenus from './components/NavMenus'
 import {navMenus} from '../../data/nav-menus'
+import { User } from '../../types'
 
-function NavigationWidgetSmall() {
+type Props = {
+  user: User
+}
+
+function NavigationWidgetSmall({user}: Props) {
   return (
     <nav id="navigation-widget-small"
       className="navigation-widget navigation-widget-desktop closed sidebar left delayed">
@@ -25,7 +30,7 @@ function NavigationWidgetSmall() {
         <div className="user-avatar-badge">
           <div className="user-avatar-badge-content">
             <Hexagon fill="#45437f" height="20" stroke="#fff" strokeWidth={3}>
-              <p className="user-avatar-badge-text">24</p>
+              <p className="user-avatar-badge-text">{user.badge}</p>
             </Hexagon>
           </div>
         </div>
