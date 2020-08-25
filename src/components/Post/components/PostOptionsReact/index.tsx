@@ -15,8 +15,8 @@ function PostOptionsReact() {
         <p className="post-option-text">React!</p>
       </div>
       <div className={`reaction-options reaction-options-dropdown `+(show ? 'show' : '')}>
-        {reactionOptions.map((option: Reaction) =>
-          <PostOptionReact option={option} />
+        {reactionOptions.map((option: Reaction, index) =>
+          <PostOptionReact key={index} option={option} />
         )}
       </div>
     </div>

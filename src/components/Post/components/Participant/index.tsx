@@ -7,7 +7,6 @@ type Props = {
 }
 
 function Participant({participant}: Props) {
-  console.log(participant)
   return (
     <div className="user-avatar micro no-stats">
       <div className="user-avatar-border">

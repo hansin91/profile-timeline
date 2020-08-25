@@ -1,5 +1,5 @@
 import React from 'react'
-import { User, Post as post } from '../../types'
+import { User, Post as PostType } from '../../types'
 import AboutMe from '../AboutMe'
 import Badges from '../Badges'
 import { badges } from '../../data/badges'
@@ -18,7 +18,7 @@ function Profile({user}: Props) {
         <Badges title="Badges" badges={badges} />
       </div>
       <div className="grid-column">
-        {posts.map((post: post, index) => <Post key={index} post={post} />)}
+        {posts.map((post: PostType, index) => <Post key={index} post={post} />)}
       </div>
     </div>
   )
