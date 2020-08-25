@@ -1,5 +1,5 @@
 import './assets/styles/index.scss'
-import React, { Fragment } from 'react'
+import React from 'react'
 import {BrowserRouter as Router} from 'react-router-dom'
 import Header from './components/Header'
 import Icons from './components/Icons'
@@ -12,16 +12,14 @@ import Profile from './components/Profile'
 function App() {
   return (
     <Router>
-      <Fragment>
-        <NavigationWidgetSmall user={user} />
-        <Header />
-        <Icons />
-        <div className="content-grid" style={{transform: 'translate(141px, 0px)', transition: 'transform 0.4s ease-in-out 0s'}}>
-          <ProfileHeader user={user} />
-          <Navigation />
-          <Profile user={user} />
-        </div>
-      </Fragment>
+      <NavigationWidgetSmall user={user} />
+      <Header />
+      <div className="content-grid" style={{transform: 'translate(141px, 0px)', transition: 'transform 0.4s ease-in-out 0s'}}>
+        <ProfileHeader user={user} />
+        <Navigation />
+        <Profile user={user} />
+      </div>
+      <Icons />
     </Router>
   );
 }

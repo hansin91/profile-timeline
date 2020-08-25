@@ -37,6 +37,35 @@ export const posts = [
         tag: 'twitch',
         link: '/newsfeed'
       }
-    ]
+    ],
+    reactions: {
+      'happy': ['Matt Parker','Destroy Dex', 'The Green Goo'],
+      'love': ['Sandra Strange'],
+      'like': ['Neko Bebop', 'Nick Grissom', 'Sarah Diamond', 'Jett Spiegel', 'Marcus Jhonson', 'Jane Rodgers', 'John Doe', 'Jack Randall']
+    },
+    participants: [
+      {
+        name: 'Matt Parker',
+        img: 'avatar/09.jpg'
+      },
+      {
+        name: 'Destroy Dex',
+        img: 'avatar/08.jpg'
+      },
+      {
+        name: 'The Green Goo',
+        img: 'avatar/12.jpg'
+      },
+      {
+        name: 'Sandra Strange',
+        img: 'avatar/16.jpg'
+      },
+      {
+        name: 'Nick Grissom',
+        img: 'avatar/06.jpg'
+      }
+    ],
+    comments: 3,
+    shares: 0
   }
 ]

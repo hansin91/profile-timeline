@@ -31,6 +31,10 @@ export interface Post {
   text: string
   video: Video
   tags: Array<Tag>
+  reactions: Object
+  participants: Array<any>
+  comments: number
+  shares: number
 }
 
 export interface NavigationMenu {
