@@ -7,6 +7,7 @@ import User from './components/User'
 import Video from './components/Video'
 import TagsList from './components/TagsList'
 import ContentActions from './components/ContentActions'
+import PostOptions from './components/PostOptions'
 
 type Props = {
   post: post
@@ -32,6 +33,7 @@ function Post({post}: Props) {
           <ContentActions post={post} />
         </div>
       </div>
+      <PostOptions />
     </div>
   )
 }

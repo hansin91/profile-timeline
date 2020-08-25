@@ -23,6 +23,11 @@ export interface Tag {
   link: string
 }
 
+export interface Reaction {
+  name: string
+  icon: string
+}
+
 export interface Post {
   id: number
   user: Object
