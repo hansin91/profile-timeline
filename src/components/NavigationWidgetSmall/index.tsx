@@ -9,12 +9,13 @@ import { User } from '../../types'
 
 type Props = {
   user: User
+  visible: boolean
 }
 
-function NavigationWidgetSmall({user}: Props) {
+function NavigationWidgetSmall({user, visible}: Props) {
   return (
     <nav id="navigation-widget-small"
-      className="navigation-widget navigation-widget-desktop closed sidebar left delayed">
+      className={`navigation-widget navigation-widget-desktop closed sidebar left `+(visible ? 'delayed' : 'hidden')}>
       <Link to="/profile" className="user-avatar small no-outline online">
         <div className="user-avatar-content">
           <Hexagon height="32" stroke="black" strokeWidth={3}>

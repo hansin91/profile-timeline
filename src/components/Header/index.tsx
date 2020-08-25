@@ -5,7 +5,16 @@ import SearchBar from './components/SearchBar'
 import ProgressStat from './components/ProgressStat'
 import Actions from './components/Actions'
 
-function Header() {
+type Props = {
+  onShowNavigationDesktop: Function
+}
+
+function Header({onShowNavigationDesktop}: Props) {
+
+  const handleShow = () => {
+    onShowNavigationDesktop()
+  }
+
   return (
     <header className="header">
       <div className="header-actions">
@@ -19,7 +28,7 @@ function Header() {
         </div>
       </div>
       <div className="header-actions">
-        <div className="sidemenu-trigger navigation-widget-trigger">
+        <div onClick={handleShow} className="sidemenu-trigger navigation-widget-trigger">
           <svg className="icon-grid">
             <use xlinkHref="#svg-grid"></use>
           </svg>
